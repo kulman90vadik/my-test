@@ -1,13 +1,10 @@
 
-
-
 .line-clamp {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 1;
 }
-
 
 /* reset */
 
@@ -367,7 +364,7 @@ body {
         border-color: rgba(255, 136, 94, 0.3);
     }
     50% {
-        border-color: rgba(255, 196, 1);
+        border-color: rgb(255, 196, 3);
     }
     100% {
         border-color: rgba(253, 69, 2, 0.3);
@@ -380,7 +377,7 @@ body {
         border-color: rgba(255, 136, 94, 0.3);
     }
     50% {
-        border-color: rgba(255, 196, 1);
+        border-color: rgb(255, 196, 1);
     }
     100% {
         border-color: rgba(253, 69, 2, 0.3);
@@ -397,12 +394,12 @@ body {
                 box-shadow: 0px 0px 7px 2px #FF885E;
     }
     50% {
-        border-color: rgba(255, 196, 1);
+        border-color: rgb(238, 203, 89);
         -webkit-box-shadow: 0px 0px 7px 3px #FF885E;
                 box-shadow: 0px 0px 7px 3px #FF885E;
     }
     75% {
-        border-color: rgba(255, 196, 0.3);
+        border-color: rgb(245, 189, 6);
         -webkit-box-shadow: 0px 0px 7px 2px #FF885E;
                 box-shadow: 0px 0px 7px 2px #FF885E;
     }
@@ -423,12 +420,12 @@ body {
                 box-shadow: 0px 0px 7px 2px #FF885E;
     }
     50% {
-        border-color: rgba(255, 196, 1);
+        border-color: rgb(255, 196, 1);
         -webkit-box-shadow: 0px 0px 7px 3px #FF885E;
                 box-shadow: 0px 0px 7px 3px #FF885E;
     }
     75% {
-        border-color: rgba(255, 196, 0.3);
+        border-color: rgb(241, 185, 1);
         -webkit-box-shadow: 0px 0px 7px 2px #FF885E;
                 box-shadow: 0px 0px 7px 2px #FF885E;
     }
@@ -469,8 +466,8 @@ body {
 
 @media screen and (max-width: 1150px) {
     .page {
-        background: url(../images/students.png) bottom 1vw right -286px/auto no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
-        background: url(../images/students.png) bottom 1vw right -286px/auto no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom 1vw right -35px/auto no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom 1vw right -35px/auto no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
     }
     .page__title {
         font-size: 35px;
@@ -487,7 +484,8 @@ body {
         background: url(../images/students.png) bottom 17px right -180px/335px 262px no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
     }
     .page__content {
-        max-width: 570px;
+        /* max-width: 570px; */
+        max-width: 640px;
         padding-top: 107px;
     }
     .page__title {
@@ -555,8 +553,19 @@ body {
 
 @media screen and (max-width: 770px) {
     .page {
-        background: url(../images/students.png) bottom 17px right -278px/509px 473px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
-        background: url(../images/students.png) bottom 17px right -278px/509px 473px no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
+        /* background: url(../images/students.png) bottom 17px right -278px/509px 473px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%); */
+        background: url(../images/students.png) bottom 17px right -92px/618px 610px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom 17px right -92px/618px 610px no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
+    }
+    .page__left {
+        margin-bottom: 10px;
+    }
+    .page__inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
     }
     .page__content {
         padding-top: 137px
@@ -600,6 +609,7 @@ body {
     .page__payment  {
         font-size: 19px;
     }
+    .page-info__students ,
     .page-info__item:not(:last-child) {
         margin-bottom: 5px;
     }
@@ -608,10 +618,7 @@ body {
         font-size: 19px;
     }
     .page__holder {
-        margin-bottom: 5px;
-    }
-    .page-info__students {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
     .logo__images {
         width: 131px;
@@ -619,6 +626,13 @@ body {
     }
     .header__link {
         padding: 13px 20px;
+    }
+    .page__inner {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        
     }
     .page__price {
         width: 80px;
@@ -641,6 +655,20 @@ body {
     }
 } 
 
+
+@media screen and (max-width: 720px) {
+    .menu {
+        top: 63px;
+    }
+    .page__content {
+        padding-top: 110px;
+    }
+    .page {
+        background: url(../images/students.png) bottom -1px right -216px/399px 282px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom -1px right -216px/399px 282px no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
+    }
+}
+
 @media screen and (max-width: 570px) {
     .page {
         background: url(../images/students.png) bottom 17px right -145px/267px 211px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
@@ -660,6 +688,9 @@ body {
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
+    .page__holder {
+        margin-bottom: 5px;
+    }
     .page__payment {
         font-size: 17px;
     }
@@ -670,6 +701,30 @@ body {
         padding: 15px 14px;
     }
 } 
+
+@media screen and (max-width: 540px) {
+    .page {
+        background: url(../images/students.png) bottom 17px right -69px/374px 445px no-repeat, -o-linear-gradient(354deg, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom 17px right -69px/374px 445px no-repeat, linear-gradient(96deg, #8159C6 0%, #6C7CFF 100%);
+    }
+    .page__inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .page__content {
+        padding-top: 140px;
+    }
+    .menu {
+        top: 62px;
+    }
+    .page-info__students,
+    .page__title ,
+    .page__holder {
+        margin-bottom: 10px;
+    }
+}
 
 @media screen and (max-width: 420px) {
     .container {
@@ -686,8 +741,8 @@ body {
         margin-bottom: 5px;
     }
     .page {
-        background: url(../images/students.png) bottom 17px right -159px/292px 298px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
-        background: url(../images/students.png) bottom 17px right -159px/292px 298px no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom 0px right -249px/456px 439px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom 0px right -249px/456px 439px no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
     }
 
     .page::after {
@@ -717,7 +772,7 @@ body {
 
     .page__left {
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 25px;
     }
 
     .page__holder {
@@ -738,11 +793,32 @@ body {
     .page-info {
         padding-left: 5px;
     }
+    .page__right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .page-info__name,
+    .page-info__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
     .page-info__item {
         font-size: 13px;
     }
     .page-info__students {
-        margin-bottom: 7px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .page {
+        background: url(../images/students.png) bottom -10px right -216px/408px 347px no-repeat, -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
+        background: url(../images/students.png) bottom -10px right -216px/408px 347px no-repeat, linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
     }
 }
 
@@ -750,5 +826,14 @@ body {
     .page {
         background: -o-linear-gradient(left, #8159C6 0%, #6C7CFF 100%);
         background: linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
+    }
+    .page-info__name, .page-info__item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .page-info__students {
+        margin-bottom: 10px;
+    }
+    .page__left {
+        margin-bottom: 12px;
     }
 }
